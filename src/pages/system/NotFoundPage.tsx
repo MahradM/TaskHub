@@ -1,0 +1,4 @@
+import { ArrowLeft, Compass } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import { Button } from '../../components/ui/Button'
+export function NotFoundPage() { return <main className="grid min-h-screen place-items-center bg-[#f6f7fb] p-5 dark:bg-[#0d111c]"><div className="max-w-md text-center"><span className="mx-auto grid size-16 place-items-center rounded-2xl bg-brand-50 text-brand-600 dark:bg-brand-500/10"><Compass className="size-8"/></span><p className="mt-6 text-sm font-bold tracking-widest text-brand-600">404</p><h1 className="mt-2 text-3xl font-bold">This path wandered off</h1><p className="subtle mt-3">The page may have moved, or you might not have access to it.</p><Link to="/dashboard"><Button className="mt-6"><ArrowLeft className="size-4"/>Back to dashboard</Button></Link></div></main> }
